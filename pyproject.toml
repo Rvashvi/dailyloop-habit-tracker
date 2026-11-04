@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dailyloop"
+version = "1.0.0"
+description = "DailyLoop: a habit tracking backend with a command line interface (Python, SQLite, Click)."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["click>=8.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+habit = "dailyloop.cli:main"
+
+[tool.setuptools]
+packages = ["dailyloop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
