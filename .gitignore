@@ -1,18 +1,18 @@
-   # Python
-   __pycache__/
-   *.pyc
-   *.egg-info/
-   build/
-   dist/
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
 
-   # virtual environments
-   .venv/
-   venv/
+# virtual environments
+.venv/
+venv/
 
-   # test and coverage output
-   .pytest_cache/
-   .coverage
-   htmlcov/
+# test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
 
-   # personal habit database
-   habits.db
+# your personal habit database
+habits.db
